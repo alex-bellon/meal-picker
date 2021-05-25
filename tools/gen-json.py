@@ -13,5 +13,5 @@ while resp == 'y':
 
     resp = input('\nAdd another meal? [y/n]: ')
 
-output = open('meals.json', 'w')
+output = open('../meals.json', 'w')
 output.write(json.dumps(meals) + '\n')

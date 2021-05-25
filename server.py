@@ -17,3 +17,6 @@ def pick():
     names, ingredients = mealpicker.pick(meals, num)
 
     return render_template('pick.html', names=names, ingredients=ingredients)
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port='9000')
