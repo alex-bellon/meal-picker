@@ -10,6 +10,10 @@ def pick(meals, num):
         meal = meals[name]
         ingredients.update(meal['ingredients'])
         names.append(name)
+
+    names.sort()
+    ingredients = list(ingredients)
+    ingredients.sort()
     
     return names, ingredients
 
@@ -22,6 +26,6 @@ def main():
     meals = import_meals('meals.json')
     names, ingredients = pick(meals, num)
     print(names)
-    print(list(ingredients))
+    print(ingredients)
 
 main()

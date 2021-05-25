@@ -16,4 +16,4 @@ def pick():
 
     names, ingredients = mealpicker.pick(meals, num)
 
-    return ', '.join(names)
+    return render_template('pick.html', names=names, ingredients=ingredients)
